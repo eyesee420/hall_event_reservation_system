@@ -47,7 +47,14 @@
             ></TextView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="profile"
+        android:textSize="30dp"
+        android:gravity="center">
 
+    </TextView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_admin"
         android:layout_width="match_parent"
