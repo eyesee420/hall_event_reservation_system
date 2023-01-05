@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.all">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search"
+        android:drawableStart="@drawable/search_icon"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/bentonsansregular"
+        android:hint="Search Sports Events"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/maroon_400"
+        android:textSize="14dp"
+        android:textStyle="bold"></EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/search_bar"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

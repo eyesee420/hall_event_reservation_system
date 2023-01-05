@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/explore"
+        android:iconTint="@color/maroon"
+        android:title="Explore">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_events"
+        android:enabled="true"
+        android:icon="@drawable/bottomnav_changes_icon_addnote"
+        android:title="Events">
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Request"
+        android:enabled="true"
+        android:icon="@drawable/bottomnav_changes_icon_status"
+        android:title="Request">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:enabled="true"
+        android:icon="@drawable/bottomnav_changes_icon_profile"
+        android:title="Profile">
+    </item>
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/account_circle-48px.xml" value="0.1" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/add_notes.xml" value="0.121" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/add_notes_full.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/event.xml" value="0.121" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/event_full.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/explore-48px.xml" value="0.173" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/explore.xml" value="0.173" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/explore_full.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/feed-48px.xml" value="0.121" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/feed.xml" value="0.121" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/join_right.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/outline_account_circle_24.xml" value="0.173" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/profile.xml" value="0.1" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/profile_circle.xml" value="0.167" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/profile_circle_filled.xml" value="0.167" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable-v24/status.xml" value="0.121" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon_addnote.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon_events.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon_explore.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon_profile.xml" value="0.167" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/bottomnav_changes_icon_status.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/custom_button.xml" value="0.1425" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.1815" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/linearcorner.xml" value="0.186" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/ripplee.xml" value="0.1" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/search.xml" value="0.147" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/tab_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/font/my_fonts.xml" value="0.8619791666666666" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_add_events_page.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_events.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_feed.xml" value="0.22" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_post_feed.xml" value="0.1953125" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_request.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_shedule.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_status.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_events.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_feed.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_set_schedule.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_status.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_all.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_events.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_featured.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_item_list.xml" value="0.1953125" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_latest.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_news.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_today.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/fragment_trending.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_events.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_events_.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_events_admin.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_events_request.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_feed.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/item_feed_admin.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/list_item.xml" value="0.2046875" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/pop_up_set_event.xml" value="0.22" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/test.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/menu/admin_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/menu/users_menu.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

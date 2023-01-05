@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="60dp"
+            app:cardCornerRadius="90dp">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ilovetaguig">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/maroon_light"
+                android:layout_below="@id/card1">
+
+            </View>
+
+
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/display_name"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"></View>
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/card1"
+            android:text="Administrator"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display_name"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@+id/card1"
+            android:text="nov/12/12 5/23/43/pm"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="10dp"
+            android:textStyle="bold"></TextView>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="0dp"></View>
+
+        <TextView
+            android:id="@+id/post_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@+id/card1"
+            android:paddingEnd="5dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"></TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_below="@+id/post_text"
+            android:layout_toRightOf="@+id/card1"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            android:elevation="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="300dp">
+            <ImageView
+
+                android:id="@+id/image_view_pic"
+                android:src="@color/maroon_light"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/post_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

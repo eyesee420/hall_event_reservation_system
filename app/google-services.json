@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "684680115700",
+    "project_id": "hall-event",
+    "storage_bucket": "hall-event.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684680115700:android:c973ae55c329e56b60f5a1",
+        "android_client_info": {
+          "package_name": "com.hall_event_reservation_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684680115700-cuq0l1t9gbcs0e9a1eeo0pr7qoo56ju3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA6PBWLfoHuEqFEpgec0bOFgvPunlj4C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684680115700-cuq0l1t9gbcs0e9a1eeo0pr7qoo56ju3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

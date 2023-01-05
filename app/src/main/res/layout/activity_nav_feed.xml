@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_feed">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/topnav"
+    android:layout_width="match_parent"
+    android:background="@color/maroon"
+    android:layout_height="50dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/tag">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_below="@+id/topnav"-->
+<!--        android:fontFamily="@font/bentonsansregular"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Hall Event Reservation"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/card"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </TextView>-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome User"
+    android:fontFamily="@font/bentonsansregular"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    ></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/topnav"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:fontFamily="@font/bentonsansregular"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:text="Hall Event Reservation System"-->
+<!--        android:textColor="@color/maroon"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold">-->
+
+<!--    </TextView>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topnav"
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        app:tabBackground="@drawable/tab_indicator"
+        app:tabIndicatorColor="@color/maroon_400"
+        app:tabRippleColor="@color/maroon_light"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/maroon">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"></com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+
+            ></com.google.android.material.tabs.TabItem>
+
+
+        <com.google.android.material.tabs.TabItem
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maps"></com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News"></com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:elevation="10dp"
+        android:layout_above="@id/bottom_navigation_users"
+        android:layout_below="@id/tablayout"></androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/maroon"
+        app:itemTextColor="@color/maroon"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/users_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
