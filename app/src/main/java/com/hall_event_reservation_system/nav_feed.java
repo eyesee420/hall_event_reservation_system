@@ -8,8 +8,10 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.tabs.TabLayout;
 import com.hall_event_reservation_system.adapters.viewpager_adapter;
@@ -20,6 +22,8 @@ public class nav_feed extends AppCompatActivity {
 
     viewpager_adapter viewpagerAdapter;
     ActivityNavFeedBinding binding;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,44 +40,8 @@ public class nav_feed extends AppCompatActivity {
 
 
 
-//        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(binding.tablayout, binding.viewpager, new TabLayoutMediator.TabConfigurationStrategy() {
-//            @Override
-//            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-//
-//                switch (position){
-//                    case 0:
-//                        tab.setText("Featured");
-//                        BadgeDrawable Featured = tab.getOrCreateBadge();
-//                        Featured.setBackgroundColor(ContextCompat.getColor
-//                                (getApplicationContext(),R.color.maroon));
-//                        Featured.setVisible(true);
-//                        Featured.setNumber(10);
-//                        break;
-//                    case 1:
-//                        tab.setText("Latest");
-//                        BadgeDrawable Latest = tab.getOrCreateBadge();
-//                        Latest.setBackgroundColor(ContextCompat.getColor
-//                                (getApplicationContext(),R.color.maroon));
-//                        Latest.setVisible(true);
-//                        Latest.setNumber(15);
-//                        Latest.setMaxCharacterCount(3);
-//                        break;
-//                    case 2:
-//                        tab.setText("Trending");
-//                        BadgeDrawable Trending = tab.getOrCreateBadge();
-//                        Trending.setBackgroundColor(ContextCompat.getColor
-//                                (getApplicationContext(),R.color.maroon));
-//                        Trending.setVisible(true);
-//
-//
-//                        break;
-//                    default:
-//
-//                        break;
-//                }
-//            }
-//        });
-//        tabLayoutMediator.attach();
+
+
 
 
         binding.tablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

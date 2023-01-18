@@ -7,10 +7,18 @@
     tools:context=".add_events_page">
 
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Scheduler Form"
+    android:textAlignment="center"
+    android:fontFamily="@font/bentonsansregular"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"></TextView>
     <LinearLayout
         android:id="@+id/line1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -51,6 +59,26 @@
         </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="Home Address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="30dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/home_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:inputType="textPostalAddress"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,107 +103,125 @@
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:hint="Home Address"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginEnd="30dp"
 
-            >
-            <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/home_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:inputType="textPostalAddress"
-                >
-            </com.google.android.material.textfield.TextInputEditText>
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-
-            android:hint="Set time from (am - pm)"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="10dp"
-
-            >
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/from_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:inputType="time"
-                >
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-
-            android:hint="Set time to (am - pm)"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginEnd="30dp"
-
-            >
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/to_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:inputType="time"
-                >
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:hint="set Date"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginEnd="30dp"
-            >
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:inputType="date"
-                >
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:paddingStart="20dp"
+        android:text="Set Time For Schedule">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tt1"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:hint="from"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt"
+        android:layout_marginStart="30dp"
+
+        android:layout_alignParentStart="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/from_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tt2"
+        android:layout_toRightOf="@id/tt1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="to"
+        android:layout_below="@id/txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+       android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/to_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt1"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:text="Set Date For Schedule (jan,1,2023)">
+
+    </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/callendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                app:startIconDrawable="@drawable/calendar_month"
+                android:hint="Calendar"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginEnd="30dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/apply_btn"
-        android:layout_below="@+id/line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Apply Schedule"
-        android:layout_marginTop="20dp">
+        android:layout_below="@+id/callendar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/box_maroon"
+        android:textColor="@color/maroon"
+        android:text="Apply Schedule">
 
     </Button>
+
     <Button
 
+        android:background="@drawable/box_exit"
         android:id="@+id/back_btn"
-        android:layout_below="@+id/apply_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="back"
-        android:layout_marginTop="20dp">
+        android:layout_below="@+id/apply_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#B71C1C"
+
+        android:layout_marginEnd="20dp"
+        android:text="Exit">
 
     </Button>
 

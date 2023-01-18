@@ -5,65 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nav_feed">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/topnav"
-    android:layout_width="match_parent"
-    android:background="@color/maroon"
-    android:layout_height="50dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="10dp"
-        app:cardCornerRadius="90dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maroon">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:src="@drawable/tag">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        </ImageView>
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/tag">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_below="@+id/topnav"-->
-<!--        android:fontFamily="@font/bentonsansregular"-->
-<!--        android:paddingStart="10dp"-->
-<!--        android:gravity="center"-->
-<!--        android:text="Hall Event Reservation"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="16dp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintLeft_toRightOf="@id/card"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
-<!--    </TextView>-->
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Welcome User"
-    android:fontFamily="@font/bentonsansregular"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:layout_marginTop="4dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="4dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="0dp"-->
+        <!--        android:layout_below="@+id/topnav"-->
+        <!--        android:fontFamily="@font/bentonsansregular"-->
+        <!--        android:paddingStart="10dp"-->
+        <!--        android:gravity="center"-->
+        <!--        android:text="Hall Event Reservation"-->
+        <!--        android:textColor="@color/white"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintLeft_toRightOf="@id/card"-->
+        <!--        app:layout_constraintTop_toTopOf="parent">-->
 
-    ></TextView>
+        <!--    </TextView>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bentonsansregular"
+            android:text="Welcome User"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            ></TextView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
@@ -99,7 +100,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All"></com.google.android.material.tabs.TabItem>
+            android:text="Feed"></com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
 
@@ -114,7 +115,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Maps"></com.google.android.material.tabs.TabItem>
+            android:text="i love taguig"></com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -127,10 +128,10 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="8dp"
-        android:elevation="10dp"
         android:layout_above="@id/bottom_navigation_users"
-        android:layout_below="@id/tablayout"></androidx.viewpager2.widget.ViewPager2>
+        android:layout_below="@id/tablayout"
+
+        android:elevation="10dp"></androidx.viewpager2.widget.ViewPager2>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_users"

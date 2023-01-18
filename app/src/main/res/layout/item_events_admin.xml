@@ -89,17 +89,16 @@
 
         <Button
             android:id="@+id/delete_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/maroon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_below="@id/Date"
-            android:text="delete"
-            android:fontFamily="@font/bentonsansregular"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_toRightOf="@id/view1"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/view1"
+            android:backgroundTint="@color/maroon"
+            android:background="@drawable/delete_forever"
+            android:textColor="@color/white"
+            android:textStyle="bold"
 
             ></Button>
     </RelativeLayout>

@@ -2,6 +2,7 @@ package com.hall_event_reservation_system;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,13 +33,23 @@ public class add_events_page extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        String[] items =  {"BasketBall","VolleyBall","Ping Pong","Chess","None"};
-
+        String[] items =  {"BasketBall","VolleyBall","Badminton","Ping Pong","Chess","Other"};
+        String[] time_items =  {"9:00 am","9:30 am","10:00 am","10:30 am","11:00 am","11:30 am","12:00 pm"
+        ,"12:30 pm","1:00 pm","1:30 pm","2:00 pm","2:30 am","3:00 am","3:30 pm","4:00 pm","4:30 pm","5:00 pm"
+        ,"5:30 pm","6:00 pm"};
 
       //  autoCompleteTxt = findViewById(R.id.autoCompleteTextView);
 
         adapterItems = new ArrayAdapter<String>(this,R.layout.list_item,items);
         binding.autoCompleteTextView.setAdapter(adapterItems);
+
+        //from time adapter
+        adapterItems = new ArrayAdapter<String>(this,R.layout.list_item2,time_items);
+        binding.fromTime.setAdapter(adapterItems);
+
+        //to time adapter
+        adapterItems = new ArrayAdapter<String>(this,R.layout.list_item2,time_items);
+        binding.toTime.setAdapter(adapterItems);
 
         binding.autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -46,15 +57,41 @@ public class add_events_page extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
 
-                Toast.makeText(getApplicationContext(),"Item: "+item,Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getApplicationContext(),"Item: "+item,Toast.LENGTH_SHORT).show();
             }
     }) ;
+        binding.fromTime.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String time_items = parent.getItemAtPosition(position).toString();
+
+              //  Toast.makeText(getApplicationContext(),"Item: "+time_items,Toast.LENGTH_SHORT).show();
+            }
+        }) ;
+        binding.toTime.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String time_items = parent.getItemAtPosition(position).toString();
+
+               // Toast.makeText(getApplicationContext(),"Item: "+time_items,Toast.LENGTH_SHORT).show();
+            }
+        }) ;
 
         binding.applyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 add_data();
                 binding.progressCircular.setProgress(View.GONE);
+            }
+        });
+
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(add_events_page.this,nav_set_Schedule.class));
+                finish();
             }
         });
 
