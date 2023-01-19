@@ -1,5 +1,6 @@
 package com.hall_event_reservation_system;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,7 +11,9 @@ import android.widget.Toast;
 
 import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.DoubleBounce;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.hall_event_reservation_system.databinding.ActivityAdminLoginBinding;
@@ -37,8 +40,13 @@ public class admin_login extends AppCompatActivity {
         binding.loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
-                progressBar.setVisibility(View.VISIBLE);
+
+                    login();
+                    progressBar.setVisibility(View.VISIBLE);
+
+
+
+
             }
         });
         binding.forgotPass.setOnClickListener(new View.OnClickListener() {
@@ -65,27 +73,27 @@ public class admin_login extends AppCompatActivity {
             return;
         }
 
-        mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
+        mAuth.signInWithEmailAndPassword(binding.emailAddress.toString().trim(),
+                binding.passWord.getText().toString().trim())
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful()){
+                        
+                                    Toast.makeText(admin_login.this, "Welcome", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(admin_login.this,admin_feed.class));
+                                    progressBar.setVisibility(View.INVISIBLE);
+                                    finish();
+                                }else
+                                    {
+                                        Toast.makeText(admin_login.this, "Invalid Account", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(admin_login.this , login_activity.class));
+                                        progressBar.setVisibility(View.INVISIBLE);
+                                    finish();
+                                    }
+                            }
+                        });
 
-                String emails ="admin123@gmail.com";
-                String passs = "123456";
-                if(emails.equals(email) && passs.equals(password)){
-                    Toast.makeText(admin_login.this, "Welcome", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(admin_login.this,admin_feed.class));
-                    progressBar.setVisibility(View.INVISIBLE);
-                    finish();
-                }
-                else {
-                    progressBar.setVisibility(View.INVISIBLE);
-                    Toast.makeText(admin_login.this, "Please Login Correct Admin Account"
-                            , Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(admin_login.this,login_activity.class));
-                    finish();
-                }
 
-            }
-        });
     }
 }
