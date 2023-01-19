@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.hall_event_reservation_system.databinding.ActivityAddEventsPageBinding;
@@ -23,15 +26,22 @@ public class add_events_page extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     AutoCompleteTextView autoCompleteTxt;
+    ProgressBar progressBar;
     ArrayAdapter<String> adapterItems;
     ActivityAddEventsPageBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     //   setContentView(R.layout.activity_add_events_page);
+       setContentView(R.layout.activity_add_events_page);
         binding = ActivityAddEventsPageBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
+
+
+        progressBar = (ProgressBar)findViewById(R.id.spin_kit);
+
+        Sprite doubleBounce = new DoubleBounce();
+        progressBar.setIndeterminateDrawable(doubleBounce);
 
         String[] items =  {"BasketBall","VolleyBall","Badminton","Ping Pong","Chess","Other"};
         String[] time_items =  {"9:00 am","9:30 am","10:00 am","10:30 am","11:00 am","11:30 am","12:00 pm"
@@ -83,7 +93,7 @@ public class add_events_page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 add_data();
-                binding.progressCircular.setProgress(View.GONE);
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
 
@@ -99,7 +109,6 @@ public class add_events_page extends AppCompatActivity {
     }
 
     private void add_data() {
-
 
 
 
@@ -131,11 +140,12 @@ public class add_events_page extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
 
-                        Toast.makeText(add_events_page.this, "success", Toast.LENGTH_SHORT).show();
-
-
+                        Toast.makeText(add_events_page.this, "Schedule Applied", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(add_events_page.this , nav_status.class));
+                        finish();
+                        progressBar.setVisibility(View.INVISIBLE);
                     }
                 });
-        binding.progressCircular.setProgress(View.VISIBLE);
+
     }
 }

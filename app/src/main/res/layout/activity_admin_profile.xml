@@ -37,7 +37,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="4dp"
             android:fontFamily="@font/bentonsansregular"
-            android:text="Welcome User"
+            android:text="Admin"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,14 +47,36 @@
             ></TextView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topnav"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bentonsansregular"
+        android:paddingStart="10dp"
+        android:text="User Profile Information's"
+        android:textColor="@color/maroon"
+        android:textSize="16dp"
+        android:textStyle="bold"></TextView>
+    <View
+        android:id="@+id/v1"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:background="@color/maroon_400"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="profile"
-        android:textSize="30dp"
-        android:gravity="center">
+        android:layout_below="@id/v1"
+        android:layout_above="@id/bottom_navigation_admin">
 
-    </TextView>
+    </androidx.recyclerview.widget.RecyclerView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_admin"
         android:layout_width="match_parent"

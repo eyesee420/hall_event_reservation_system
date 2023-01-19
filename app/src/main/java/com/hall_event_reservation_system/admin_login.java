@@ -41,11 +41,19 @@ public class admin_login extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
             }
         });
+        binding.forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(admin_login.this , forgot_password_page.class));
+            }
+        });
     }
 
     private void login() {
         String email = binding.emailAddress.getText().toString().trim();
         String password = binding.passWord.getText().toString().trim();
+
+
         if (email.isEmpty()){
             binding.emailAddress.requestFocus();
             binding.emailAddress.setError("Required*");
@@ -60,10 +68,23 @@ public class admin_login extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                Toast.makeText(admin_login.this, "Welcome", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(admin_login.this,admin_feed.class));
-                progressBar.setVisibility(View.INVISIBLE);
-                finish();
+
+                String emails ="admin123@gmail.com";
+                String passs = "123456";
+                if(emails.equals(email) && passs.equals(password)){
+                    Toast.makeText(admin_login.this, "Welcome", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(admin_login.this,admin_feed.class));
+                    progressBar.setVisibility(View.INVISIBLE);
+                    finish();
+                }
+                else {
+                    progressBar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(admin_login.this, "Please Login Correct Admin Account"
+                            , Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(admin_login.this,login_activity.class));
+                    finish();
+                }
+
             }
         });
     }

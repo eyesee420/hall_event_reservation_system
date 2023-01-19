@@ -102,17 +102,18 @@
     </Button>
 
     <TextView
-        android:layout_below="@id/login_btn"
+        android:id="@+id/forgot_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
         android:layout_alignParentStart="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/bentonsansregular"
-        android:textSize="14dp"
-        android:textStyle="bold"
+        android:text="Forgot Password ?"
         android:textColor="@color/maroon"
-        android:text="Forgot Password ?" />
+        android:textSize="14dp"
+        android:textStyle="bold" />
 
 
 

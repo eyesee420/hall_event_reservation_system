@@ -105,7 +105,8 @@ public class admin_post_feed extends AppCompatActivity {
 
                        binding.progressCircular.setVisibility(View.INVISIBLE);
                         Toast.makeText(admin_post_feed.this, "uploaded", Toast.LENGTH_SHORT).show();
-
+                        startActivity(new Intent(admin_post_feed.this , admin_feed.class));
+                        finish();
                     }
                 });
             }

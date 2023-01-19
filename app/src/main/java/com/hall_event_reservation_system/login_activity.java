@@ -57,6 +57,12 @@ public class login_activity extends AppCompatActivity {
                 startActivity(new Intent(login_activity.this , admin_login.class));
             }
         });
+        binding.forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(login_activity.this , forgot_password_page.class));
+            }
+        });
     }
 
     private void login() {

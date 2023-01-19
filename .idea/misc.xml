@@ -35,6 +35,7 @@
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/box_maroon.xml" value="0.1555" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/changes_icon_toggle.xml" value="0.1525" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/custom_button.xml" value="0.1425" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/disabled_editext.xml" value="0.1" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/edit_note48px_color.xml" value="0.1525" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.1815" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/drawable/linearcorner.xml" value="0.186" />
@@ -51,6 +52,7 @@
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_request.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_shedule.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_admin_status.xml" value="0.25" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_forgot_password_page.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/activity_nav_events.xml" value="0.25" />
@@ -77,6 +79,7 @@
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/list_item2.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/pop_up_set_event.xml" value="0.22" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/test.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/layout/users_row.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/menu/admin_menu.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/hall_event_reservation_system/app/src/main/res/menu/users_menu.xml" value="0.209375" />
       </map>

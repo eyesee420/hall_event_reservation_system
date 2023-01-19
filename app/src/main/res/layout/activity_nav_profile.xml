@@ -33,21 +33,21 @@
 
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="4dp"
-            android:fontFamily="@font/bentonsansregular"
-            android:text="Welcome User"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:fontFamily="@font/bentonsansregular"-->
+<!--            android:text="Welcome User"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
 
-            ></TextView>
+<!--            ></TextView>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -92,11 +92,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:enabled="false"
+            android:textColorHint="@drawable/disabled_editext"
             android:layout_marginEnd="30dp"
             android:hint="Full Name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/full_name"
+                android:textColor="@drawable/disabled_editext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="15dp"></com.google.android.material.textfield.TextInputEditText>
@@ -111,12 +113,14 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:enabled="false"
+            android:textColorHint="@drawable/disabled_editext"
             android:layout_marginEnd="30dp"
             android:hint="Home Address">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/home_address"
                 android:layout_width="match_parent"
+                android:textColor="@drawable/disabled_editext"
                 android:layout_height="wrap_content"
                 android:paddingStart="15dp"></com.google.android.material.textfield.TextInputEditText>
 
@@ -130,11 +134,13 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:enabled="false"
+            android:textColorHint="@drawable/disabled_editext"
             android:layout_marginEnd="30dp"
             android:hint="Phone Number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phone_number"
+                android:textColor="@drawable/disabled_editext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="15dp"></com.google.android.material.textfield.TextInputEditText>
@@ -149,7 +155,7 @@
             android:layout_marginTop="20dp"
             android:enabled="false"
             android:layout_marginEnd="30dp"
-            android:hint="Email Address">
+            android:hint="Email Address cannot be updated">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_address"
@@ -162,7 +168,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/update_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/line1"
@@ -182,7 +188,7 @@
         android:id="@+id/delete_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_btn"
+        android:layout_below="@id/update_btn"
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
@@ -209,5 +215,13 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/users_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:SpinKit_Color="@color/maroon" />
 </RelativeLayout>

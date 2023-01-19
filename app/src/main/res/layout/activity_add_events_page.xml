@@ -225,11 +225,15 @@
 
     </Button>
 
-    <ProgressBar
-        android:id="@+id/progress_circular"
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="invisible"></ProgressBar>
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:SpinKit_Color="@color/maroon" />
 
 </RelativeLayout>

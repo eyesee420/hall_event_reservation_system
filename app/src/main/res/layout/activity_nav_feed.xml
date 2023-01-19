@@ -54,7 +54,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="4dp"
             android:fontFamily="@font/bentonsansregular"
-            android:text="Welcome User"
+            android:text="Taguig City"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
